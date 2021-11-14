@@ -1,0 +1,43 @@
+/* Variables */
+:root {
+  /* colors */
+--color: 187;
+
+--first-color: hsl(var(--color), 53%, 49%);
+--title-color: hsl(var(--color), 53%, 15%);
+--text-color: hsl(var(--color), 12%, 35%);
+--text-color-light: hsl(var(--color), 12%, 65%);
+--body-color: hsl(var(--color), 24%, 94%);
+--bg-input-color: hsl(0 0% 100%);
+
+/* Font and typography  */
+--body-font: 'Poppins', sans-serif;
+--title-font-size: 1.3rem;
+--input-font-size: .8rem;
+
+/* header */
+--header: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+:root {
+  --title-font-size: 1.7rem;
+  --header: 3.5rem;
+  --input-font-size: 1rem;
+}
+}
+
+/* Variables Dark theme */
+body.dark-theme {
+  --title-color: hsl(var(--color), 12%, 95%);
+  --text-color: hsl(var(--color), 12%, 20%);
+  --body-color: hsl(var(--color), 10%, 16%);
+  --bg-input-color: hsl(0 0% 85%);
+  --text-color-light: hsl(var(--color), 12%, 40%);
+
+}
+
+.dark-theme .btn-theme {
+  box-shadow: inset -1px -1px 1px hsla(var(--color), 8%, 20%, 1), 
+              inset 1px 1px 1px hsla(var(--color), 8%, 12%, 1);
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Fast Conveting</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav-header">
+            <div class="right-side">
+                <h1 class="logo">Fast converting</h1>
+                <i class='bx bxl-youtube youtube-icon'></i>
+            </div>
+            <button class="btn-theme" id="btn-theme">
+                <i class='bx bxs-moon'></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="container main">
+        <form action="#" id="form" data-vefication="true">
+            <input id="input" type="search" placeholder="Search or paste Youtube link here" autocomplete="off">
+            <button id="btn" type="submit">
+                <i class='bx bxs-music'></i>
+            </button>
+        </form>
+
+        <div class="image">
+            <img src="assets/img/song.png" alt="">
+        </div>
+    </main>
+    
+    <div id="modal-container">
+        <div class="modal">
+            <button id="closeModal">
+                <i class='bx bx-x closeModal-icon'></i>
+            </button>
+
+            <h2 class="name-music">Mc Hariel</h2>
+
+            <div class="videoWrapper">
+                <iframe id="video" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <a class="btn-download" href="">Download</a>
+        </div>
+    </div>
+   
+    <script type="module" src="assets/js/scrip.js"></script>
+</body>
+
+</html>

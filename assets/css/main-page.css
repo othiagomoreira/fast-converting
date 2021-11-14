@@ -1,0 +1,131 @@
+/* Header */
+.header {
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--header);
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.logo {
+    font-size: var(--title-font-size);
+    color: var(--title-color);
+}
+
+.youtube-icon {
+    font-size: var(--title-font-size);
+    color: var(--first-color);
+}
+
+.btn-theme {
+    background: transparent;
+    border: none;
+    color: var(--first-color);
+    padding: .7rem;
+    border-radius: 50%;
+    box-shadow: inset -1px -1px 1px hsla(var(--color), 0%, 100%, 1), 
+    inset 1px 1px 1px hsla(var(--color), 30%, 86%, 1);
+    cursor: pointer;
+}
+
+/* Main */
+.main {
+    min-height: calc(100vh - var(--header));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+} 
+
+#form {
+    position: relative;
+    width: 100%;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 2px 3px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+#input {
+    width: 100%;
+    background-color: var(--bg-input-color);
+    border: none;
+    padding: 1rem;
+    font-family: inherit;
+    color: var(--text-color);
+    font-size: var(--input-font-size);
+    outline: none;
+}
+
+#input::placeholder {
+    color: var(--text-color-light);
+    font-size: .9rem;
+}
+
+#btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 20%;
+    border: none;
+    background-color: var(--first-color);
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all ease 1s;
+}
+
+#btn:hover {
+    color: #fff;
+}
+
+#btn.accept {
+    width: 100%;
+    background-color: #26a726;
+    color: #fff;
+}
+
+#btn.rejected {
+    background-color: #e41111;
+    color: #fff;
+}
+
+.image {
+    height: 200px;
+    animation: 6s  infinite upAndDown;
+}
+
+.image img {
+    height: 100%;
+}
+
+
+@keyframes upAndDown {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(-2%, -15% );
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@media screen and (min-width:767px) {
+    .main {
+        flex-direction: row;
+    }
+    .image {
+        height: 250px;
+    }
+}
