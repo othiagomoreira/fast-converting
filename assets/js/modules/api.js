@@ -39,8 +39,15 @@ export default function initApi() {
     e.preventDefault();
 
     const inputValue = input.value;
-    const getIdUrl = inputValue.split('=')[1];
 
-    getApi(getIdUrl);
+    if (inputValue.includes('youtu.be/')) {
+      const getIdMobile = inputValue.split('youtu.be/')[1];
+      getApi(getIdMobile);
+    } else if (inputValue.includes('watch?v')) {
+      const getIdDesktop = inputValue.split('=')[1];
+      getApi(getIdDesktop);
+    } else {
+      getApi(inputValue);
+    }
   });
 }
