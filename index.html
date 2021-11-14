@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Converta vídeos do Youtube para MP3 de graça com o nosso Fast Converting." />
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -18,7 +19,7 @@
                 <h1 class="logo">Fast converting</h1>
                 <i class='bx bxl-youtube youtube-icon'></i>
             </div>
-            <button class="btn-theme" id="btn-theme">
+            <button class="btn-theme" id="btn-theme" aria-label="button change theme">
                 <i class='bx bxs-moon'></i>
             </button>
         </div>
@@ -27,7 +28,7 @@
     <main class="container main">
         <form action="#" id="form" data-vefication="true">
             <input id="input" type="search" placeholder="Search or paste Youtube link here" autocomplete="off">
-            <button id="btn" type="submit">
+            <button id="btn" type="submit" aria-label="button send url">
                 <i class='bx bxs-music'></i>
             </button>
         </form>
@@ -39,7 +40,7 @@
     
     <div id="modal-container">
         <div class="modal">
-            <button id="closeModal">
+            <button id="closeModal" aria-label="button close modal">
                 <i class='bx bx-x closeModal-icon'></i>
             </button>
 
@@ -49,7 +50,7 @@
                 <iframe id="video" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
-            <a class="btn-download" href="">Download</a>
+            <a class="btn-download" href="#">Download</a>
         </div>
     </div>
    

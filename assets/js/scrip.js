@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import initApi from './modules/api.js';
 import darkTheme from './modules/theme.js';
 

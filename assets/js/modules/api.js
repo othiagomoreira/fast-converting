@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/extensions
 import { modalOpen, showMusicInfo } from './modal.js';
 
 const input = document.querySelector('#input');
@@ -20,7 +21,6 @@ export default function initApi() {
     const videoFormatted = url.split('watch?v=').join('embed/');
 
     if (data.msg === 'success') {
-      input.setAttribute('placeholder', 'Search or paste Youtube link here');
       btnSendUrl.className = 'accept';
 
       setTimeout(() => {
@@ -30,9 +30,7 @@ export default function initApi() {
 
       input.value = '';
     } else {
-      input.setAttribute('placeholder', 'incorrect url address');
       btnSendUrl.className = 'rejected';
-
       input.value = '';
     }
   }
